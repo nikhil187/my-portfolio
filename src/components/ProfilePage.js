@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import profilepic from '../images/profile.jpeg';
 
 function ProfilePage() {
   return (
@@ -10,11 +11,7 @@ function ProfilePage() {
           <Row className="align-items-center">
             <Col md={4} className="text-center">
               <div className="profile-image-container">
-                <img 
-                  src="/images/profile.jpeg"  // Make sure this path is correct, otherwise image won't show
-                  alt="Profile"
-                  className="profile-image"
-                />
+                <img src={profilepic} alt="Profile" className="profile-image" />
               </div>
             </Col>
             <Col md={8}>
