@@ -4,14 +4,14 @@ import { Container, Row, Col } from 'react-bootstrap';
 function ProfilePage() {
   return (
     <div className="profile-container">
-      {/* Header Section */}
+      {/* This is the header section where we show the profile image and name */}
       <div className="profile-header">
         <Container>
           <Row className="align-items-center">
             <Col md={4} className="text-center">
               <div className="profile-image-container">
                 <img 
-                  src="/images/profile.jpeg"  // Ensure this path is correct
+                  src="/images/profile.jpeg"  // Make sure this path is correct, otherwise image won't show
                   alt="Profile"
                   className="profile-image"
                 />
@@ -22,6 +22,7 @@ function ProfilePage() {
                 <h1>NIKHIL SHETTY L</h1>
                 <h3 className="text-gradient">Master's Student</h3>
                 <div className="social-links">
+                  {/* Links to social media profiles */}
                   <a href="https://github.com/nikhil187" target="_blank" rel="noopener noreferrer">
                     <i className="bi bi-github"></i>
                   </a>
@@ -38,9 +39,9 @@ function ProfilePage() {
         </Container>
       </div>
 
-      {/* Main Content */}
+      {/* Main content of the profile */}
       <Container className="profile-content">
-        {/* About Section */}
+        {/* About Me section */}
         <section className="profile-section">
           <h2 className="section-title">About Me</h2>
           <div className="section-content">
@@ -52,7 +53,7 @@ function ProfilePage() {
           </div>
         </section>
 
-        {/* Research Experience Section */}
+        {/* Research Experience section */}
         <section className="profile-section">
           <h2 className="section-title">Research Experience</h2>
           <div className="section-content">
@@ -65,7 +66,7 @@ function ProfilePage() {
           </div>
         </section>
 
-        {/* Education Section */}
+        {/* Education section */}
         <section className="profile-section">
           <h2 className="section-title">Education</h2>
           <div className="section-content">
@@ -88,7 +89,7 @@ function ProfilePage() {
           </div>
         </section>
 
-        {/* Skills Section */}
+        {/* Skills section */}
         <section className="profile-section">
           <h2 className="section-title">Technical Skills</h2>
           <div className="section-content">
@@ -121,7 +122,7 @@ function ProfilePage() {
           </div>
         </section>
 
-        {/* Experience Section */}
+        {/* Work Experience section */}
         <section className="profile-section">
           <h2 className="section-title">Work Experience</h2>
           <div className="section-content">

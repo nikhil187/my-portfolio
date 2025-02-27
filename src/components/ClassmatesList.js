@@ -2,7 +2,8 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import ClassmateCard from './ClassmateCard';
 
-// Store all data in a single array named "People"
+// Store all data in a single array named "People".
+// This array holds the details of each classmate, making it easy to manage and update.
 const People = [
   {
     name: "Daniel",
@@ -33,6 +34,10 @@ function ClassmatesList() {
               {...classmate}
             />
           ))}
+          {/* 
+            Loop through the People array and create a ClassmateCard for each classmate.
+            The key prop helps React identify which items have changed are added or are removed.The (...) indicates as new data is added it gets updated.
+          */}
         </Col>
       </Row>
     </Container>

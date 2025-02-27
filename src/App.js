@@ -7,6 +7,8 @@ import ProfilePage from './components/ProfilePage';
 import ClassmatesList from './components/ClassmatesList';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 
+
+// Main App component that sets up routing and navigation
 function App() {
   return (
     <Router>
@@ -33,4 +35,4 @@ function App() {
   );
 }
 
-export default App;
+export default App; // Exporting the App component for use in other files
