@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/ProfilePage.css';
 import './styles/ClassmatesList.css';
@@ -19,8 +19,8 @@ function App() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
-                <Nav.Link as={Link} to="/">My Profile</Nav.Link>c
-                <Nav.Link as={Link} to="/classmates">My Classmates</Nav.Link>
+                <Nav.Link as={Link} to="#/">My Profile</Nav.Link>
+                <Nav.Link as={Link} to="#/classmates">My Classmates</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>
